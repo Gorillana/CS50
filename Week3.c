@@ -241,7 +241,7 @@ boot vote(int voter, int rank, string name)
   // Check if name matches
   for (int i = 0; i < candidate_count; i++)
   {
-    // checks for a match
+    // Checks for a match
     if (strcmp(name, candidates[i].name) == 0)
     {
       // Updates global array
@@ -272,4 +272,7 @@ void tabulate(void)
 return;
 }
                    
-        
+// Print the winner of the election, if there is one
+bool print_winner(void)
+                   {
+                     
