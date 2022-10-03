@@ -4,7 +4,7 @@
 // Cash.c
 
 
-//Hello.c
+Hello.c
 
 #include <stdio.h>
 #include <cs50.h>
@@ -16,7 +16,7 @@ int main(void)
 	printf("Hello, %s\n", name);
 }
 
-//Mario.c
+Mario.c
 #include <cs50.h>
 #include <stdio.h>
 
@@ -49,7 +49,7 @@ int main(void)
 	}
 }
  
-// Cash.c
+Cash.c
 #include <cs50.h>
 #include <stdio.h>
 
