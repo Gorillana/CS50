@@ -1,4 +1,4 @@
-// index
+// Index Week 1 - C
 // Hello.c
 // Mario.c
 // Cash.c
