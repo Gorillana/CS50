@@ -1,9 +1,9 @@
-#Index Week 3 - Algorithms
+// Index Week 3 - Algorithms
 // Sort not included as it's an exercise
-#Plurality.c
-#Runoff.c
-
 // Plurality.c
+// Runoff.c
+
+Plurality.c
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
@@ -108,7 +108,7 @@ void print_winner(void)
  return;
 }
 
-// Runoff.c
+Runoff.c
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
