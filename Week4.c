@@ -1,5 +1,5 @@
 // Index Week 4 - Memory
-// Volume - Lab
+// Lab: Volume
 // volume.c
 // filter-less
   // bmp.h
