@@ -10,7 +10,7 @@ int main(void)
     int min;
     do
     {
-        int max = get_int("Maximum: ");
+        max = get_int("Maximum: ");
     }
     while (min >= max);
 
