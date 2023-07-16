@@ -1,0 +1,13 @@
+// after using the different algorithms on the data these were my findings:
+
+sort1 uses: bubble sort
+
+How do you know?: Faster with sorted data
+
+sort2 uses: merge sort
+
+How do you know?: Overall faster than other sorting files
+
+sort3 uses: selection sort
+
+How do you know?: Significantly slower with sorted data than sort1 or sort2
