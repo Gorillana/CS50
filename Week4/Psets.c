@@ -218,7 +218,7 @@ int main(int argc, char *argv[])
   }
                                     
   // Determine padding for scanlines
-  int padding = (4 - (width * sizeof(RGBTRIPE)) % 4 ) % 4;
+  int padding = (4 - (width * sizeof(RGBTRIPLE)) % 4 ) % 4;
 
   // Iterate over infile's scanlines
   for (int i = 0; i < height; i++)
@@ -323,7 +323,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
      for (j = 0; j < width; j++)
      {
        // Convert to float
-       float ored = image[i][j].rgbtRed;
+       float oRed = image[i][j].rgbtRed;
        float oGreen = image[i][j].rgbtGreen;
        float oBlue = image[i][j].rgbtBlue;
 
@@ -450,7 +450,7 @@ void sepia(int height, int width, RGBTRIPLE image[height][width]);
 void reflect(int height, int width, RGBTRIPLE image[height][width]);
 
 // Blur image
-void blur (int height, int width, RGBTRIPLE image[height][width]);
+void blur(int height, int width, RGBTRIPLE image[height][width]);
                                     
 MakeFile   
 filter:
