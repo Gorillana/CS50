@@ -465,7 +465,7 @@ Recover.c
 // define/include unsigned int
 typedef uint8_t BYTE;
 
-int main(int argc, char * argv[])
+int main(int argc, char *argv[])
 {
   // Verify cmd line arg count is 2, if 1 is ret'd something went awry
   if (argc != 2)
