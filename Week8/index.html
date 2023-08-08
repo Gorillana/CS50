@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+    <script>
+      // TODO: Add code to check answers to questions
+      // JavaScript code to turn buttons red or green, checking for correctness
+
+      // Run script once DOM is loaded
+      document.addEventListener('DOMContentLoaded', function() {
+
+          // When correct answer is clicked, change color to green
+          let cor = document.querySelector('.cor')
+          cor.addEventListener('click', function() {
+              cor.style.backgroundColor = '#00ff00';
+              document.querySelector('#mcinput').innerHTML = 'Correct!';
+          });
+
+        // When any incorrect answer is clicked, change color to red
+        let inc = document.querySelectorAll('.inc');
+        for (let i = 0; i < inc.length; i++) {
+            inc[i].style.backgroundColor = '#ff0000';
+            document.querySelector('#mcinput').innerHTML = 'Incorrect';
+        });
+      }
+
+      // Check free response submission
+      document.querySelector('#check').addEventListener('click', function() {
+          let input = document.querySelector('input');
+          if (input.value == 'Lloyd') {
+              input.style.backgroundColor = 'green';
+              document.querySelector('#frinput').innerHTML = 'Correct!';
+          } else {
+              input.style.backgroundColor = 'red';
+              document.querySelector('#frinput').innerHTML = 'Incorrect';
+          }
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <div class="header">
+        <h1>Trivia!</h1>
+  </body>
