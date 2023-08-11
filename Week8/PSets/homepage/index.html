@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <!--Boostrap / responsive to mobile device-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+
+        <!--Navbar with tabs via Boostrap-->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://gorillana-code50-105313076-v6797gxg42x9vg-8080.preview.app.github.dev/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gorillana-code50-105313076-v6797gxg42x9vg-8080.preview.app.github.dev/CS50P.html">CS50</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gorillana-code50-105313076-v6797gxg42x9vg-8080.preview.app.github.dev/CSRL.html">Reading List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gorillana-code50-105313076-v6797gxg42x9vg-8080.preview.app.github.dev/Cyber.html">Cybersecurity</a>
+            </li>
+          </ul>
+
+        <title>Homepage</title>
+    </head>
+    <body>
+        <div class="header">
+        <h2>Homepage</h2>
+        </div>
+        <p>
+            For this assignment, I figured I would link my four pages by the navbar above. Within the navbar, you'll notice four distinct
+            pages, this current homepage, CS50, Reading List, and Cybersec. On the CS50 page, I've attempted to recreate the "Gradebook" of
+            CS50 and show my progress throughout this course. For the Reading List, I've included various books from different topics that
+            have proved useful and have otherwise piqued my interest and seem pertinent to my coding/cybersecurity journey. Lastly, on the
+            Cybersec page, I've listed some helpful websites and the certificates one might pursue on their cybersecurity journey. Given the
+            varied pathways one can pursue, I've also included a link to <a href="https://www.cyberseek.org/">cyberseek.org</a>, which was originally referred to me during my Intro to
+            Cybersecurity course I took via EdX online at the University of Washington.
+        </p>
+        <!--Button to reveal image below-->
+        <center><button type="button" class="btn btn-outline-primary" onclick="document.getElementById('myImage').style.display='block'">Did you miss me?</button></center>
+        <br>
+        <!--Hidden image that is shown once clicking button, used to implement JS on site-->
+        <center><img id="myImage" src="https://gabecodeblog.files.wordpress.com/2023/02/catscratchhello.jpg" alt="MIT Scratch cat saying hi" style="display:none"></center>
+    </body>
+</html>
