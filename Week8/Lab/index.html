@@ -5,43 +5,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <title>Trivia!</title>
-    <script>
-      // TODO: Add code to check answers to questions
-      // JavaScript code to turn buttons red or green, checking for correctness
+   <script>
+     // TODO: Add code to check answers to questions
+     // Javascript code to turn buttons red or green, checking for correctness
 
-      // Run script once DOM is loaded
+     // Run script once DOM is loaded
       document.addEventListener('DOMContentLoaded', function() {
 
           // When correct answer is clicked, change color to green
-          let cor = document.querySelector('.cor')
+          let cor = document.querySelector('.cor');
           cor.addEventListener('click', function() {
               cor.style.backgroundColor = '#00ff00';
               document.querySelector('#mcinput').innerHTML = 'Correct!';
           });
 
-        // When any incorrect answer is clicked, change color to red
-        let inc = document.querySelectorAll('.inc');
-        for (let i = 0; i < inc.length; i++) {
-            inc[i].style.backgroundColor = '#ff0000';
-            document.querySelector('#mcinput').innerHTML = 'Incorrect';
-        });
-      }
-
-      // Check free response submission
-      document.querySelector('#check').addEventListener('click', function() {
-          let input = document.querySelector('input');
-          if (input.value == 'Lloyd') {
-              input.style.backgroundColor = 'green';
-              document.querySelector('#frinput').innerHTML = 'Correct!';
-          } else {
-              input.style.backgroundColor = 'red';
-              document.querySelector('#frinput').innerHTML = 'Incorrect';
+          // When any incorrect answer is clicked, change color to red
+          let inc = document.querySelectorAll('.inc');
+          for (let i = 0; i < inc.length; i++) {
+              inc.[i].addEventListener('click', function() {
+                  inc[i].style.backgroundColor = '#ff0000';
+                  document.querySelector('#mcinput').innerHTML = 'Incorrect';
+              });
           }
+
+          // Check free response submission
+          document.querySelector('#check').addEventListener('click', function() {
+              let input = document.querySelector('input');
+              if (input.value == 'Lloyd') {
+                  input.style.backgroundColor = 'green';
+                  document.querySelector('#frinput').innerHTML = 'Correct!';
+              } else {
+                  input.style.backgroundColor = 'red';
+                  document.querySelector('#frinput').innerHTML = 'Incorrect';
+              }
+          });
       });
-    });
-    </script>
+   </script>
   </head>
   <body>
-    <div class="header">
-        <h1>Trivia!</h1>
+      <div class="header">
+          <h1>Trivia!</h1>
+      </div>
+
+      <div class="container">
+          <div class="section">
+              <h2>Part 1: Multiple Choice</h2>
+              <hr>
+              <!-- TODO: Add multiple choice question here -->
+              <!-- h3 heading for the text of questions-->
+              <h3>What is the first language we covered in CS50?</h3>
+              <!-- have one button for each answer, three choices, one correct-->
+              <button class="inc">Python</button>
+              <button class="cor">Scratch</button>
+              <button class="inc">C</button>
+
+              <p id="mcinput"></p>
+          </div>
+
+          <div class="section">
+              <h2>Part 2: Free Response</h2>
+              <hr>
+              <!-- TODO: Add free response question here -->
+                <h3> What is Doug's last name from CS50 Shorts?</h3>
+                <input type="text"/></input>
+                <button id="check">Submit</button>
+
+                <p id="frinput"></p>
+          </form>
+        </div>
+      </div>
   </body>
+</html>
